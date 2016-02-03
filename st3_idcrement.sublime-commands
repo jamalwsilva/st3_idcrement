@@ -1,0 +1,7 @@
+[
+    {
+        "caption": "XGHWINS: Increment regions",
+        "command": "st3_idcrement",
+        "args": {}
+    }
+]
