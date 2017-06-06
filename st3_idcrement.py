@@ -10,9 +10,9 @@ class St3IdcrementCommand(sublime_plugin.TextCommand):
             text = view.substr(region)
 
             try:
-                number = int(float(text)) + 1
+                number = int(float(text if last is None else last)) + 1
             except:
-                number = (last if last != None else index) + 1
+                number = 0
 
             view.replace(edit, region, str(number))
 
